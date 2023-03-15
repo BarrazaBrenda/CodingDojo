@@ -2,7 +2,6 @@
   porque se repite una condicion hasta que ocurra un evento 
 ¿Cuál es el punto de partida del bucle?
   en el km 0
-  
 ¿Cuándo debe detenerse el bucle?
   cuando se alcanzan los 10km
 ¿Cómo sabrá parar?
