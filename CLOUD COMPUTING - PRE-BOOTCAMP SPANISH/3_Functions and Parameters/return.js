@@ -3,7 +3,9 @@ function hello() {
     console.log('hola');
 }
 hello();
-console.log('Dojo');
+console.log('Dojo');            
+
+no hay diagramas
 
 
 Fragmento de código 2
@@ -14,6 +16,9 @@ function hello() {
 var result = hello();
 console.log('el resultado es', result);
 
+hello()     |     15
+result      |     15
+
 
 Fragmento de código 3
 function numPlus(num) {
@@ -22,6 +27,13 @@ function numPlus(num) {
 }
 var result = numPlus(3);
 console.log('x es', result);
+
+en funcion:
+num         |   3
+
+result      |   numPlus(3)
+numPlus(3)  |   18
+result      |   18
 
 
 Fragmento de código 4: hay un giro
@@ -35,6 +47,16 @@ var result = logAndReturn(10);
 console.log(result);
 console.log(num);
 
+num                 |   15
+result              |   logAndReturn(10)
+
+en funcion:
+num                 |   10
+
+logAndReturn(10)    |   10
+result              |   10
+num                 |   15
+
 
 Fragmento de código 5
 var num = 15;
@@ -46,6 +68,14 @@ function timesTwo(num){
 var result = timesTwo(10);
 console.log(result);
 console.log(num);
+
+num             |   15
+
+en funcion:
+num             |   10
+
+result          |   timesTwo(10)
+timesTwo(10)    |   20
 
 
 Fragmento de código 6
