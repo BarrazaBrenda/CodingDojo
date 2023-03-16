@@ -87,13 +87,36 @@ function timesTwoAgain(num) {
 var result = timesTwoAgain(3) + timesTwoAgain(5);
 console.log('el resultado es', result);
 
+result              |     timesTwoAgain(3) + timesTwoAgain(5)
+timesTwoAgain(3)    |     6
+timesTwoAgain(5)    |     10 
 
+en funcion:
+num         |   3
+y           |   6
+
+en funcion2: 
+num         |   5
+y           |   10
+
+    
 Fragmento de código 7
 function sumNums(num1, num2) {  
    return num1+num2;
 }
 console.log(sumNums(2,3))
 console.log(sumNums(3,5))
+
+sumNums(2,3)    |   5
+sumNums(3,5)    |   8
+
+en funcion:
+num1    |   2
+num2    |   3
+
+en funcion2:
+num1    |   3
+num2    |   5
 
 
 Fragmento de código 8
@@ -103,6 +126,18 @@ function printSumNums(num1, num2) {
 }
 console.log(printSumNums(2,3))
 console.log(printSumNums(3,5))
+
+printSumNums(2,3)   |   5
+printSumNums(3,5)   |   8
+
+en funcion:
+num1    |   2
+num2    |   3
+
+en funcion2:
+
+num1    |   3
+num2    |   5
 
 
 Fragmento de código 9
@@ -114,6 +149,21 @@ function sumNums(num1, num2) {
 var result = sumNums(2,3) + sumNums(3,5);
 console.log('el resultado es', result);
 
+result          |   sumNums(2,3) + sumNums(3,5)
+sumNums(2,3)    |   5
+sumNums(3,5)    |   8
+result          |   13
+
+en funcion:
+num1    |   2
+num2    |   3
+sum     |   5
+
+en funcion2:
+num1    |   3
+num2    |   5
+sum     |   8
+
 
 Fragmento de código 10
 function sumNums(num1, num2) {
@@ -123,3 +173,35 @@ function sumNums(num1, num2) {
 }
 var result = sumNums(2,3) + sumNums(3,sumNums(2,1)) + sumNums(sumNums(2,1),sumNums(2,3));
 console.log('el resultado es', result);
+
+result                               |  sumNums(2,3) + sumNums(3,sumNums(2,1)) + sumNums(sumNums(2,1),sumNums(2,3))
+sumNums(2,3)                         |  5
+sumNums(2,1)                         |  3
+sumNums(3,sumNums(2,1))              |  6
+sumNums(sumNums(2,1),sumNums(2,3)    |  8
+sumNums(2,3) + sumNums(3,sumNums(2,1)) + sumNums(sumNums(2,1),sumNums(2,3))     |       19
+result  |   19
+
+en funcion sumNums(2,3):
+sum     |   num1 + num2
+num1    |   2
+num2    |   3
+sum     |   5
+
+en funcion sumNums(2,1):
+sum     |   num1 + num2
+num1    |   2
+num2    |   1
+sum     |   3
+
+en funcion sumNums(3,sumNums(2,1):
+sum     |   num1 + num2
+num1    |   3
+num2    |   3
+sum     |   6
+
+en funcion sumNums(sumNums(2,1),sumNums(2,3)):
+sum     |   num1 + num2
+num1    |   3
+num2    |   5
+sum     |   8                
